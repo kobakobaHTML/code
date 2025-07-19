@@ -1,0 +1,80 @@
+ @charset "UTF-8";
+/* ベースリセット＆フォント */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #90caf9;
+}
+p {
+  color: #b0bec5;
+}
+
+/* 縦並びレイアウト */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* textarea */
+textarea {
+  width: 100%;
+  height: 300px;
+  background-color: #212121;
+  color: #eeeeee;
+  border: 2px solid #90caf9;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  font-family: 'jetBrains MONO' , monospace;
+}
+textarea:focus {
+  border-color: #42a5f5;
+  outline: none;
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #90caf9;
+  border-radius: 6px;
+  background-color: white;
+}
+
+/* ボタン */
+button {
+  margin-top: 12px;
+  background-color: #42a5f5;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 120px;
+}
+button:hover {
+  background-color: #1e88e5;
+}
+
+/* 見出し */
+h2 {
+  margin-top: 24px;
+  color: #90caf9;
+}

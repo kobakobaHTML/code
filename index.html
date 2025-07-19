@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>サンドボックス付きリアルタイムHTMLプレビュー</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>サンドボックス付きリアルタイムHTMLプレビュー</h1>
+  <p>下のテキストエリアにHTMLコードを書いて、「表示」ボタンを押すか、入力するとリアルタイムで表示されます。</p>
+  <p>スペースキーでインデント（字下げ）を挿入します。</p>
+  <div class="container">
+    <textarea id="codeArea">
+<table border="1">
+  <tr>
+    <th>名前</th>
+    <th>年れい</th>
+    <th>好きな色</th>
+  </tr>
+  <tr>
+    <td>さくら</td>
+    <td>11さい</td>
+    <td>ピンク</td>
+  </tr>
+  <tr>
+    <td>けんた</td>
+    <td>10さい</td>
+    <td>青</td>
+  </tr>
+</table>
+    </textarea>
+
+    <button id="displayBtn">表示</button>
+
+    <iframe id="preview" sandbox="allow-same-origin"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
