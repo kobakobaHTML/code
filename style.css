@@ -78,3 +78,10 @@ h2 {
   margin-top: 24px;
   color: #90caf9;
 }
+.cube_border{
+    border:1em solid  #7dc7ff;
+    border-radius: 40px;
+}
+.sns{
+    background-color: #7dc7ff;
+}
